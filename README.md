@@ -14,5 +14,3 @@ page HTML.
 2. The EC2 instance running Nginx went down over the weekend, we had an outage, it's been decided that we need a solution that is more resilient than just a single instance. Please implement a solution that you'd be confident would continue to run in the event one instance goes down.
 
 3. We are looking to improve the security and segregation of our network we've decided we would like private subnets that are not addressable on the internet. Modify the VPC to meet this requirement, the private subnets should still have egress internet connectivity.
-
-4. In order to provide a consistent environment on the teams CI server and each engineer's workstation we've decided it would make sense to run terraform in Docker. Create a Dockerfile and a wrapper script that will enable this. The script should be callable with the same arguments as the terraform cli tool, i.e. init/plan/apply etc
